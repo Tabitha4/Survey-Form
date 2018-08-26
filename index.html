@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:400,500" />
+
+    <title>Simple Skills Assessment Form</title>
+
+  </head>
+  <body>
+    <main id="main" class="main">
+      <h1 id="title">Survey My Skills</h1>
+      <div id="form-base">
+        <p id="description">
+          Tell me how or IF my skills add up!
+        </p>
+        <form id="survey-form">
+          <div class="row">
+            <div class="labels">
+              <label id="name-label" for="name">* Name: </label>
+            </div>
+            <div class="right-side">
+              <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="labels">
+              <label id="email-label" for="email">* Email: </label>
+            </div>
+            <div class="right-side">
+              <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your email">
+            </div>
+          </div>
+          <div class="row">
+            <div class="labels">
+              <label id="number-label" for="number"> Phone: </label>
+            </div>
+            <div class="right-side">
+              <input type="number" name="number" id="number" min="10" max="11" class="input-field" placeholder="Enter your phone">
+            </div>
+          </div>
+          <div class="row">
+            <div class="labels">
+              <label for="currentPos">Which option best describes why you're here?</label>
+            </div>
+            <div class="right-side">
+              <select id="dropdown" name="currentPos" class="dropdown">
+            <option disabled value>Select an option</option>
+            <option  value="looking">Just Looking</option>
+            <option value="student">I'm a Student</option>
+            <option value="hire">I'm looking to hire</option>
+            <option value="lost">I'm Lost, how'd I get here?</option>
+            <option value="other">Other</option>
+          </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="labels">
+              <label for="userRating">* How likely is that you would recommend me to a friend or company?</label>
+            </div>
+            <div class="right-side">
+              <ul style="list-style: none;">
+                <li class="radio"><label>Definitely<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+                <li class="radio"><label>Maybe<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+                <li class="radio"><label>Not sure<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="labels">
+              <label for="most-like">What do you appreciate most of my abilities?: </label>
+            </div>
+            <div class="right-side">
+              <select id="most-like" name="mostLike" class="dropdown">
+            <option disabled selected value>Select an option</option>
+            <option value="humour">Humour</option>
+            <option value="style">Style</option>
+            <option value="clean">Clean code</option>
+            <option value="variety">Variety</option>
+          </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="labels">
+              <label for="preferences">Things that should I should improve on?<br>(Check all that apply): </label>
+            </div>
+            <div class="right-side">
+              <ul id="preferences" style="list-style: none;">
+                <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Front-end abilities</label></li>
+                <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Back-end abilities</li>
+                <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Database</label></li>
+                <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Heroku (grrr)</label></li>
+                <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Github</label></li>
+                <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">JavaScript</label></li>
+                <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatings">UI/UX</label></li>
+                <li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="userRatings">Ruby/Rails</label></li>
+                <li class="checkbox"><label><input name="prefer" value="9" type="checkbox" class="userRatings">TDD/BDD</label></li>
+                <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Bootstrap</label></li>
+                <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Spelling...clearly</label></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="labels">
+              <label for="comments">Any Comments or Suggestions?</label>
+            </div>
+            <div class="right-side">
+              <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+            </div>
+          </div>
+          <button id="submit" type="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
